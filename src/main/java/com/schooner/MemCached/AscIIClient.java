@@ -1200,7 +1200,7 @@ public class AscIIClient extends MemCachedClient {
 
 				// store the object into the cache
 				hm.put(key, o);
-			} else if (END.equals(line)) {
+			} else if ("END".equals(line)) {
 				break;
 			}
 		}
